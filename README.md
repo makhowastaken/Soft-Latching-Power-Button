@@ -27,6 +27,6 @@ BOM:
 * R2: 100K 0603
 * R3: 100K 0603
 * R4: 300K 0603
-* SW1: ¯\_(ツ)_/¯
+* SW1: ¯\\_(ツ)_/¯
 
 I'll fix the BOM and swap out the components with more easily available (so that you can at least get everything from one vendor) shortly. 
