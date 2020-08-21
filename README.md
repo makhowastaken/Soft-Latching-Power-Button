@@ -22,15 +22,14 @@ Install: Remove the original power switch. This cannot be installed in parallel.
 BOM:
 * Q1: [IRF7317TRPBF](https://www.digikey.com/product-detail/en/infineon-technologies/IRF7317TRPBF/IRF7317PBFCT-ND/812608)
 * D1: [MMBD7000LT1G](https://www.digikey.com/product-detail/en/on-semiconductor/MMBD7000LT1G/MMBD7000LT1GOSCT-ND/1139789)
-* C1: 0.1uF 0603
-* C2: 10 uF 0603
-* C3: 1 uF 0603
-* R1: 10K 0603
-* R2: 100K 0603
-* R3: 100K 0603
-* R4: 300K 0603
+* C1: [0.1uF 0603](https://www.digikey.com/product-detail/en/yageo/CC0603KRX7R6BB104/311-4055-1-ND/8025144)
+* C2: [10 uF 0603](https://www.digikey.com/product-detail/en/murata-electronics/GRM188R61A106KE69J/490-14372-1-ND/6606833)
+* C3: [1 uF 0603](https://www.digikey.com/product-detail/en/murata-electronics/GRM188R61A105KA61J/490-6408-1-ND/3845605)
+* R1: [10K 0603](https://www.digikey.com/product-detail/en/yageo/RC0603FR-0710KL/311-10-0KHRCT-ND/729827)
+* R2&R3: [100K 0603](https://www.digikey.com/product-detail/en/susumu/RR0816P-104-D/RR08P100KDCT-ND/432772
+* R4: [300K 0603](https://www.digikey.com/product-detail/en/susumu/RR0816P-304-D/RR08P300KDCT-ND/432783)
 * SW1: ¯\\\_(ツ)\_/¯
 
-I'll fix the BOM and swap out the components with more easily available (so that you can at least get everything from one vendor) shortly. 
+If ordering from digikey, I've added a [\*.csv](digikey_cart.csv) file to the repository that you can upload to automatically add all items to the cart instead of having to click each link. For the passives (caps, resistors, and diode), there may be better alternatives or even discounts for higher quantities (so ten resistors may literally be cheaper than just three). This cart contains exactly enough parts (except the switch) to build three units as oshpark ships PCBs in quantities of three. The subtotal is $5.85 and shipping will be another $4.99 (plus tariff/tax) so with the PCBs, this brings the total cost per unit to around $4.10 before tax and tariff fees. This is more than I wanted this to cost but it is still reasonably cheap for what it is. 
 
 ![front](front.png) ![back](back.png)
