@@ -9,6 +9,8 @@ SCHEMATIC:
 
 ![schematic](schematic.png)
 
+I made a mistake and mosfet D1 is shorting VCC to ground, I'm currently updating it. 
+
 ---
 
 This circuit is intended to replace the power switch in a Game Boy Advance or Game Boy Advance SP but, once finished, should be usuable in any Game Boy console or other similar device. The circuit is based around the IRF7317TRPBF – Mosfet Array N and P-Channel chip and should be usuable between 1.5v and 7.5v. Any lower and it will not reliably switch and any higher and it won't switch at all. See [this page from Mosaic Industries](http://www.mosaic-industries.com/embedded-systems/microcontroller-projects/electronic-circuits/push-button-switch-turn-on/switching-battery-power) for more info. 
