@@ -1,4 +1,4 @@
-# Soft-Latching-Power-Button
+# Soft Latching Power Button
 A simple circuit for implementing a momentary power switch
 
 **THIS IS A WORK IN PROGRESS AND IS COMPLETELY UNTESTED**
@@ -9,7 +9,7 @@ SCHEMATIC:
 
 ![schematic](schematic.png)
 
-I made a mistake and mosfet D1 is shorting VCC to ground, I'm currently updating it. 
+~~I made a mistake and mosfet D1 is shorting VCC to ground, I'm currently updating it.~~ This should be fixed
 
 ---
 
