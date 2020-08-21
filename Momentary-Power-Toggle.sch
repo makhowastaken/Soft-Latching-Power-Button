@@ -84,7 +84,7 @@ L Device:D_Small D1
 U 1 1 5F3F351C
 P 3550 3850
 F 0 "D1" V 3504 3920 50  0000 L CNN
-F 1 "BAV99" V 3595 3920 50  0000 L CNN
+F 1 "MMBD7000LT1G" V 3595 3920 50  0000 L CNN
 F 2 "Diode_SMD:D_SOT-23_ANK" V 3550 3850 50  0001 C CNN
 F 3 "~" V 3550 3850 50  0001 C CNN
 	1    3550 3850
@@ -114,9 +114,9 @@ F 3 "~" H 3800 2900 50  0001 C CNN
 	1    3800 2900
 	1    0    0    -1  
 $EndComp
-Text Notes 4600 3250 0    50   ~ 0
+Text Notes 4500 3200 0    50   ~ 0
 Auto On
-Text Notes 4600 2900 0    50   ~ 0
+Text Notes 4500 3000 0    50   ~ 0
 Auto Off
 $Comp
 L Device:C_Small C1
@@ -195,7 +195,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 3250 5650 3250
 Wire Wire Line
-	5650 3050 5100 3050
+	5650 3050 5250 3050
 Wire Wire Line
 	6350 3250 6350 3050
 Wire Wire Line
@@ -217,11 +217,8 @@ Wire Wire Line
 Connection ~ 6350 3550
 Wire Wire Line
 	6350 3550 6350 3650
-Text GLabel 5350 3250 0    50   Input ~ 0
+Text GLabel 5250 2950 1    50   Input ~ 0
 D1
-Wire Wire Line
-	5350 3250 5450 3250
-Connection ~ 5450 3250
 Wire Wire Line
 	6600 3150 6600 3400
 Wire Wire Line
@@ -333,4 +330,15 @@ Wire Wire Line
 Connection ~ 7150 2950
 Wire Wire Line
 	3250 2700 3550 2700
+Text Notes 7100 2500 0    50   ~ 0
+Console Power Input
+Text Notes 1650 3450 0    50   ~ 0
+System Ground or \nBattery Negative Terminal
+Text Notes 2900 2450 0    50   ~ 0
+Fused Power In\n(B+ or PWR_2)
+Wire Wire Line
+	5250 2950 5250 3050
+Connection ~ 5250 3050
+Wire Wire Line
+	5250 3050 5100 3050
 $EndSCHEMATC
