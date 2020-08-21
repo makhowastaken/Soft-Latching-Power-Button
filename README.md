@@ -32,3 +32,5 @@ BOM:
 * SW1: ¯\\\_(ツ)\_/¯
 
 I'll fix the BOM and swap out the components with more easily available (so that you can at least get everything from one vendor) shortly. 
+
+![front](front.png) ![back](back.png)
