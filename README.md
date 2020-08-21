@@ -21,7 +21,7 @@ Install: Remove the original power switch. This cannot be installed in parallel.
 
 BOM:
 * Q1: [IRF7317TRPBF](https://www.digikey.com/product-detail/en/infineon-technologies/IRF7317TRPBF/IRF7317PBFCT-ND/812608)
-* D1: [MMBD7000LT1G](https://lcsc.com/product-detail/Switching-Diode_ON-Semiconductor-ON-MMBD7000LT1G_C31774.html)
+* D1: [MMBD7000LT1G](https://www.digikey.com/product-detail/en/on-semiconductor/MMBD7000LT1G/MMBD7000LT1GOSCT-ND/1139789)
 * C1: 0.1uF 0603
 * C2: 10 uF 0603
 * C3: 1 uF 0603
