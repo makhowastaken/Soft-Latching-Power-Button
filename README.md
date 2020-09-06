@@ -1,15 +1,13 @@
 # Soft Latching Power Button
 A simple circuit for implementing a momentary power switch
 
-**THIS IS A WORK IN PROGRESS AND IS COMPLETELY UNTESTED**
+**THIS IS A WORK IN PROGRESS BUT IS TESTED AND WORKING**
 
-I'm still going over the schematic. Would appreciate feedback. 
+There is a small quirk with this circuit and I'm not quite sure how to fix it. The Game Boy cannot be restarted as this replacement bypasses the drain resistor installed on the original power switch. If you try and restart the Game Boy too quickly, it will refuse to power up so it is possible to enter a scenario where the power switch is "on" but the console is "off" and it will not matter how long you wait to try powering it up again, it will not boot unless you switch the MOSFET off again by holding the power switch or by interrupting power (remove batteries). I think a small work around will be to integrate a status LED to the power switch mod to indicate when it is switched "on". I'm still going over the schematic. Would appreciate feedback. 
 
 SCHEMATIC:
 
 ![schematic](schematic.png)
-
-~~I made a mistake and mosfet D1 is shorting VCC to ground, I'm currently updating it.~~ This should be fixed
 
 ---
 
@@ -26,7 +24,7 @@ BOM:
 * C2: [10 uF 0603](https://www.digikey.com/product-detail/en/murata-electronics/GRM188R61A106KE69J/490-14372-1-ND/6606833)
 * C3: [1 uF 0603](https://www.digikey.com/product-detail/en/murata-electronics/GRM188R61A105KA61J/490-6408-1-ND/3845605)
 * R1: [10K 0603](https://www.digikey.com/product-detail/en/yageo/RC0603FR-0710KL/311-10-0KHRCT-ND/729827)
-* R2&R3: [100K 0603](https://www.digikey.com/product-detail/en/susumu/RR0816P-104-D/RR08P100KDCT-ND/432772
+* R2&R3: [100K 0603](https://www.digikey.com/product-detail/en/susumu/RR0816P-104-D/RR08P100KDCT-ND/432772)
 * R4: [300K 0603](https://www.digikey.com/product-detail/en/susumu/RR0816P-304-D/RR08P300KDCT-ND/432783)
 * SW1: ¯\\\_(ツ)\_/¯
 
