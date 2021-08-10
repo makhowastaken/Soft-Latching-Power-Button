@@ -1,3 +1,5 @@
+Update 2021-08-10: I have also finally (hopefully) fixed the DS Lite style power switch board. 1.6mm PCB will be too thick. 0.8mm board might work but appears to be too tall. Flex PCB might be required. I will update this abysmal repo with better instructions once fully tested. 
+
 Update 2021-07-24: I have finally (hopefully) fixed the footprint for the switch I used but I may have messed up the switch placement in the process. I have ordered test PCBs to verify. This is the switch the boards use: https://lcsc.com/product-detail/Multi-Directional-Switches_XKB-Connectivity-TM-2023_C318951.html
 
 v2.1 is an incremental upgrade to v2.0 (the original version in this soft latching repository, v1.0 used a different design entirely and never made it to github) that moves the button off the board. The ground pad has moved to the bottom of the PCB and the button footprint has been reduced to a solder pad on the front of the board. I have also removed the power on behavior jumper from this revision to try and make it even smaller. When ordering this revision from oshpark, it should only be $0.90 so it's quite a bit cheaper than the previous revision. 
