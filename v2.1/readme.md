@@ -25,7 +25,7 @@ either the momentary board (recommended for funnyplaying and other branded backl
 
 or the rotary board (recommended for "one chip" backlights)
 
-<img src="power-switch(rotary)\front.png">  <img src="power-switch(rotary)/back.png">
+<img src="power-switch(rotary)\front.png" width="300" height="300">  <img src="power-switch(rotary)/back.png">
 
 
 and then you'll need the BOM. See the digikey cart for v2.0 and then either the [rotary switch](https://lcsc.com/product-detail/Multi-Directional-Switches_XKB-Connectivity-TM-2023_C318951.html) or the [momentary switch](https://lcsc.com/product-detail/Slide-Switches_XKB-Connectivity-SK-1391L-2_C319026.html) and then some wires to attach everything together. 
