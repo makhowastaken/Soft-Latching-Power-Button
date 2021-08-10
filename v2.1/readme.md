@@ -21,7 +21,7 @@ You need the main board
 
 either the momentary board (recommended for funnyplaying and other branded backlights)
 
-<img src="power-switch(ds_lite)/front.png" width="45%" height="45%">  <img src="power-switch(ds_lite)/back.png" width="45%" height="45%">
+<img src="power-switch(ds_lite)/front.png" width="40%" height="40%">  <img src="power-switch(ds_lite)/back.png" width="40%" height="40%">
 
 or the rotary board (recommended for "one chip" backlights)
 
