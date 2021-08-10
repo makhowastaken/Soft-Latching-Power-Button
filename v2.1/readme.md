@@ -2,7 +2,7 @@ v2.1 is an incremental upgrade to v2.0 (the original version in this soft latchi
 
 There are also two new board files. These are to replace the power switch itself on the GAME BOY ADVANCE ONLY. Other versions will come, probably, but these are purely for testing. I have no idea if either of these will fit and work and when everything is assembled and tested, I will add renders, BOM, assembly instructions, etc. Both switch boards attach here and will need a very clean removal of the OEM power switch (please don't mod game boys with good, working switches)
 
-<img src="switch_attachment_points.png" width="40%" height="40%">
+<img src="switch_attachment_points.png" width="50%" height="50%">
 
 BOM for the power board is the same as v2.0. To build this, you need to order the main board ("gerbers/Momentary-Power-Toggle.zip") and the parts to populate that board and you also need EITHER the momentary (DS Lite style) power switch design ("power-switch (ds lite)\gerbers\power-switch.zip") OR the rotary encoder power switch ("power-switch (rotary)\gerbers\power-switch(rotary).zip"). The rotary encoder style switch also allows for brightness control with "one chip" style IPS kits. It does NOT work for the funnyplaying IPS kits so I recommend using the momentary switch design for that instead. 
 
@@ -21,11 +21,11 @@ You need the main board
 
 either the momentary board (recommended for funnyplaying and other branded backlights)
 
-<img src="power-switch(ds_lite)/front.png" width="30%" height="30%">  <img src="power-switch(ds_lite)/back.png" width="30%" height="30%">
+<img src="power-switch(ds_lite)/front.png" width="45%" height="45%">  <img src="power-switch(ds_lite)/back.png" width="45%" height="45%">
 
 or the rotary board (recommended for "one chip" backlights)
 
-<img src="power-switch(rotary)\front.png" width="25%" height="25%">  <img src="power-switch(rotary)/back.png" width="25%" height="25%">
+<img src="power-switch(rotary)\front.png" width="35%" height="35%">  <img src="power-switch(rotary)/back.png" width="35%" height="35%">
 
 
 and then you'll need the BOM. See the digikey cart for v2.0 and then either the [rotary switch](https://lcsc.com/product-detail/Multi-Directional-Switches_XKB-Connectivity-TM-2023_C318951.html) or the [momentary switch](https://lcsc.com/product-detail/Slide-Switches_XKB-Connectivity-SK-1391L-2_C319026.html) and then some wires to attach everything together. 
