@@ -58,7 +58,7 @@ F 3 "~" V 3550 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L misc:IRF7317PbF Q1
+L Momentary-Power-Toggle-rescue:IRF7317PbF-misc Q1
 U 1 1 5F3FED7F
 P 6000 3300
 F 0 "Q1" H 6000 2785 50  0000 C CNN
@@ -280,4 +280,30 @@ Wire Wire Line
 	4450 3050 4900 3050
 Wire Wire Line
 	4450 2700 4450 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5F68BE7D
+P 2250 3450
+F 0 "#PWR?" H 2250 3200 50  0001 C CNN
+F 1 "GND" H 2255 3277 50  0000 C CNN
+F 2 "" H 2250 3450 50  0001 C CNN
+F 3 "" H 2250 3450 50  0001 C CNN
+	1    2250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5F68C2F5
+P 1950 3350
+F 0 "J4" H 2058 3531 50  0000 C CNN
+F 1 "GND" H 2058 3440 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1950 3350 50  0001 C CNN
+F 3 "~" H 1950 3350 50  0001 C CNN
+	1    1950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3450 2250 3350
+Wire Wire Line
+	2250 3350 2150 3350
 $EndSCHEMATC
