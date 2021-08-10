@@ -13,17 +13,17 @@ I have since updated all three boards but the video should cover the install pre
 
 What you need to build this:
 
-You need the main board
+You need the main board (board thickness irrelevant, default 1.6mm is fine but flex allows for tucking it away easier)
 
 <img src="front.png" width="30%" height="30%">  <img src="back.png" width="30%" height="30%">
 
 **AND**
 
-either the momentary board (recommended for funnyplaying and other branded backlights)
+either the momentary board (recommended for funnyplaying and other branded backlights) -- recommended order flex or otherwise as thin as possible
 
 <img src="power-switch(ds_lite)/front.png" width="40%" height="40%">  <img src="power-switch(ds_lite)/back.png" width="40%" height="40%">
 
-or the rotary board (recommended for "one chip" backlights)
+or the rotary board (recommended for "one chip" backlights) -- recommend ordering 1.6mm for strength but no thinner than 0.8mm
 
 <img src="power-switch(rotary)\front.png" width="35%" height="35%">  <img src="power-switch(rotary)/back.png" width="35%" height="35%">
 
