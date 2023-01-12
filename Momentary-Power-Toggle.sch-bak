@@ -25,28 +25,6 @@ F 3 "" H 3550 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
-U 1 1 5F3F1AD6
-P 2650 3600
-F 0 "#PWR03" H 2650 3350 50  0001 C CNN
-F 1 "GND" H 2655 3427 50  0000 C CNN
-F 2 "" H 2650 3600 50  0001 C CNN
-F 3 "" H 2650 3600 50  0001 C CNN
-	1    2650 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5F3F1E0E
-P 3250 3450
-F 0 "SW1" H 3250 3685 50  0000 C CNN
-F 1 "ON / OFF Button" H 3250 3594 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS" H 3250 3450 50  0001 C CNN
-F 3 "~" H 3250 3450 50  0001 C CNN
-	1    3250 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R1
 U 1 1 5F3F241D
 P 3550 2900
@@ -69,17 +47,6 @@ F 3 "~" H 3700 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:Jumper_3_Bridged12 JP1
-U 1 1 5F3F302E
-P 4450 3050
-F 0 "JP1" V 4404 3117 50  0000 L CNN
-F 1 "Power On Setting" V 4495 3117 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm_NumberLabels" H 4450 3050 50  0001 C CNN
-F 3 "~" H 4450 3050 50  0001 C CNN
-	1    4450 3050
-	0    -1   1    0   
-$EndComp
-$Comp
 L Device:D_Small D1
 U 1 1 5F3F351C
 P 3550 3850
@@ -91,7 +58,7 @@ F 3 "~" V 3550 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L misc:IRF7317PbF Q1
+L Momentary-Power-Toggle-rescue:IRF7317PbF-misc Q1
 U 1 1 5F3FED7F
 P 6000 3300
 F 0 "Q1" H 6000 2785 50  0000 C CNN
@@ -101,8 +68,6 @@ F 3 "" H 6050 3500 50  0001 C CNN
 	1    6000 3300
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	3050 3450 2650 3450
 $Comp
 L Device:R_Small R2
 U 1 1 5F4025FF
@@ -114,10 +79,6 @@ F 3 "~" H 3800 2900 50  0001 C CNN
 	1    3800 2900
 	1    0    0    -1  
 $EndComp
-Text Notes 4500 3200 0    50   ~ 0
-Auto On
-Text Notes 4500 3000 0    50   ~ 0
-Auto Off
 $Comp
 L Device:C_Small C1
 U 1 1 5F403831
@@ -128,17 +89,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5000 3050 50  
 F 3 "~" H 5000 3050 50  0001 C CNN
 	1    5000 3050
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5F403AD7
-P 4250 3350
-F 0 "#PWR02" H 4250 3100 50  0001 C CNN
-F 1 "GND" H 4255 3177 50  0000 C CNN
-F 2 "" H 4250 3350 50  0001 C CNN
-F 3 "" H 4250 3350 50  0001 C CNN
-	1    4250 3350
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
@@ -189,13 +139,9 @@ Wire Wire Line
 Wire Wire Line
 	3550 4150 7150 4150
 Wire Wire Line
-	4250 3350 4250 3300
-Wire Wire Line
-	4250 3300 4450 3300
-Wire Wire Line
 	5450 3250 5650 3250
 Wire Wire Line
-	5650 3050 5100 3050
+	5650 3050 5250 3050
 Wire Wire Line
 	6350 3250 6350 3050
 Wire Wire Line
@@ -217,11 +163,8 @@ Wire Wire Line
 Connection ~ 6350 3550
 Wire Wire Line
 	6350 3550 6350 3650
-Text GLabel 5350 3250 0    50   Input ~ 0
+Text GLabel 5250 2950 1    50   Input ~ 0
 D1
-Wire Wire Line
-	5350 3250 5450 3250
-Connection ~ 5450 3250
 Wire Wire Line
 	6600 3150 6600 3400
 Wire Wire Line
@@ -250,8 +193,6 @@ Wire Wire Line
 Connection ~ 7150 3400
 Wire Wire Line
 	3550 2600 3550 2700
-Wire Wire Line
-	4600 3050 4900 3050
 Wire Wire Line
 	5100 3050 5100 3650
 Wire Wire Line
@@ -282,8 +223,6 @@ Wire Wire Line
 Connection ~ 3800 2700
 Wire Wire Line
 	3800 2700 3550 2700
-Wire Wire Line
-	4450 2700 4450 2800
 Connection ~ 4450 2700
 Wire Wire Line
 	4450 2700 3800 2700
@@ -313,21 +252,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 5F42A93A
-P 2400 3350
-F 0 "J3" H 2508 3531 50  0000 C CNN
-F 1 "BT-" H 2508 3440 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2400 3350 50  0001 C CNN
-F 3 "~" H 2400 3350 50  0001 C CNN
-	1    2400 3350
+P 3250 3450
+F 0 "J3" H 3358 3631 50  0000 C CNN
+F 1 "BTN" H 3358 3540 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3250 3450 50  0001 C CNN
+F 3 "~" H 3250 3450 50  0001 C CNN
+	1    3250 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 3350 2650 3350
-Wire Wire Line
-	2650 3350 2650 3450
-Connection ~ 2650 3450
-Wire Wire Line
-	2650 3600 2650 3450
 Wire Wire Line
 	7150 2650 7150 2950
 Connection ~ 7150 2950
@@ -335,8 +267,43 @@ Wire Wire Line
 	3250 2700 3550 2700
 Text Notes 7100 2500 0    50   ~ 0
 Console Power Input
-Text Notes 1650 3450 0    50   ~ 0
-System Ground or \nBattery Negative Terminal
+Text Notes 2450 3550 0    50   ~ 0
+Button to System \nGround or Battery \nNegative Terminal
 Text Notes 2900 2450 0    50   ~ 0
 Fused Power In\n(B+ or PWR_2)
+Wire Wire Line
+	5250 2950 5250 3050
+Connection ~ 5250 3050
+Wire Wire Line
+	5250 3050 5100 3050
+Wire Wire Line
+	4450 3050 4900 3050
+Wire Wire Line
+	4450 2700 4450 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5F68BE7D
+P 2250 3450
+F 0 "#PWR?" H 2250 3200 50  0001 C CNN
+F 1 "GND" H 2255 3277 50  0000 C CNN
+F 2 "" H 2250 3450 50  0001 C CNN
+F 3 "" H 2250 3450 50  0001 C CNN
+	1    2250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5F68C2F5
+P 1950 3350
+F 0 "J4" H 2058 3531 50  0000 C CNN
+F 1 "GND" H 2058 3440 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1950 3350 50  0001 C CNN
+F 3 "~" H 1950 3350 50  0001 C CNN
+	1    1950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3450 2250 3350
+Wire Wire Line
+	2250 3350 2150 3350
 $EndSCHEMATC
