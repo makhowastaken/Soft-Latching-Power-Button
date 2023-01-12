@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Momentary-Power-Toggle-rescue)(type Legacy)(uri ${KIPRJMOD}/Momentary-Power-Toggle-rescue.lib)(options "")(descr ""))
-)

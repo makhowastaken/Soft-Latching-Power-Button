@@ -3,7 +3,7 @@ A simple circuit for implementing a momentary power switch
 
 **THIS TESTED AND WORKING**
 
-Update 2023-01-11: Files unchanged but I merged the readmes and cleaned up the repository somewhat.
+Update 2023-01-11: I did lots of cleanup in this repository. I made a minor update to the main board file to take advantage of newer kicad features but otherwise it should be unchanged. 
 
 This circuit is intended to replace the power switch in a Game Boy Advance or Game Boy Advance SP but should be usuable in any Game Boy console or other similar device if wired up properly. All labelling is GBA-centric but should be easy enough to translate if you understand what it's doing. The circuit is based around the IRF7317TRPBF – Mosfet Array N and P-Channel chip and should be usuable between 1.5v and 7.5v. Any lower and it will not reliably switch and any higher and it won't switch at all. See [this page from Mosaic Industries](http://www.mosaic-industries.com/embedded-systems/microcontroller-projects/electronic-circuits/push-button-switch-turn-on/switching-battery-power) for more info. 
 
@@ -36,8 +36,6 @@ BOM:
 * R4: [300K 0603](https://www.digikey.com/product-detail/en/susumu/RR0816P-304-D/RR08P300KDCT-ND/432783)
 
 Digikey cart [\*.csv](digikey_cart.csv) Note: for the passives (caps, resistors, and diode), there may be better alternatives or even discounts for higher quantities (so ten resistors may literally be cheaper than just three). This cart contains exactly enough parts (except the switch) to build three units.
-
-![front](front.png) ![back](back.png)
 
 You need the main board (thinner is better than thicker -- default 1.6mm is fine but thinner or flex allows for tucking it away inside the console more easily)
 
