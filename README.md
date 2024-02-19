@@ -45,7 +45,9 @@ You need the main board (thinner is better than thicker -- default 1.6mm is fine
 
 ORDERING THE SWITCH BOARD:
 
-And for a GBA, I have also made two power switch board files. These are to replace the power switch itself on the GAME BOY ADVANCE ONLY. You still need the main board to use with either of these boards.
+And for a GBA, I have also made two power switch board files. These are to replace the power switch itself on the GAME BOY ADVANCE ONLY. You still need the main board to use with either of these boards. See video link below for a quick demo. 
+
+[![Momentary Soft-Latching Power Switch Design for Game Boy Advance](https://img.youtube.com/vi/x3YJ14doAME/0.jpg)](https://www.youtube.com/watch?v=x3YJ14doAME)
 
 The rotary style switch board has been tested and does work great but ONLY with "one chip" backlight kits. It will NOT work with funnyplaying backlight kits to control the brightness (they don't like the select button pad being stuck low indefinitely) and it will not work with cloud game store kits either due to the lack of button based controls in their current iterations. [Here is the the switch you need](https://lcsc.com/product-detail/Multi-Directional-Switches_XKB-Connectivity-TM-2023_C318951.html) for this switch board. Board tested working at 1.6mm thickness. Thicker is better than thinner here but thinner boards can work (albeit may have some flex when pressing the button).
 
